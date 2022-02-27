@@ -22,9 +22,9 @@ public class LightMove : MonoBehaviour
         transform.position = new Vector3(transform.position.x + speed, transform.position.y, transform.position.z);
         if(transform.position.x > -0.2f)
         {
-            Instantiate(FinalLight, new Vector3(0, 0, 0), new Quaternion(0, 0, 1, 1));
-            Instantiate(FinalLight, new Vector3(0, offset, 0), new Quaternion(0, 0, 1, 1));
-            Instantiate(FinalLight, new Vector3(0, -offset, 0), new Quaternion(0, 0, 1, 1));
+            Instantiate(FinalLight, new Vector3(0, 0, 30), new Quaternion(0, 0, 1, 1));
+            Instantiate(FinalLight, new Vector3(0, offset, 30), new Quaternion(0, 0, 1, 1));
+            Instantiate(FinalLight, new Vector3(0, -offset, 30), new Quaternion(0, 0, 1, 1));
             Destroy(gameObject);
         }
     }
